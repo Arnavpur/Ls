@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For My Love</title>
+  <style>
+    body {
+      background: linear-gradient(45deg, #ff66b2, #ff99cc, #ff66b2, #ff99cc);
+      background-size: 400%;
+      animation: gradientAnimation 10s ease infinite;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0%; }
+      50% { background-position: 100%; }
+      100% { background-position: 0%; }
+    }
+
+    header {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: white;
+      padding: 30px 10px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    main {
+      max-width: 700px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px 30px;
+      box-shadow: 0 0 10px rgba(255, 102, 178, 0.6);
+      font-size: 1.2em;
+      line-height: 1.5;
+      margin: 20px auto;
+      opacity: 0;
+      animation: fadeIn 2s 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 1.1em;
+      background: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(255, 102, 178, 0.6);
+      transition: transform 0.3s, background 0.3s;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background: #ff4d94;
+    }
+
+    .mensaje-final {
+      font-size: 1.5em;
+      color: #ff3399;
+      margin: 40px auto 20px auto;
+      opacity: 0;
+      animation: aparecerSuave 3s ease 5s forwards;
+    }
+
+    @keyframes aparecerSuave {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .respuesta-btn {
+      display: inline-block;
+      background: #ff66b2;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1.1em;
+      margin-top: 30px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .respuesta-btn:hover {
+      background: #e60073;
+      transform: scale(1.05);
+    }
+
+    footer {
+      color: #666;
+      margin: 40px auto;
+      font-size: 0.9em;
+    }
+
+    .heart {
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      background: red;
+      transform: rotate(-45deg);
+      animation: floatUpRotateScale 6s linear infinite;
+      z-index: 0;
+    }
+
+    .heart:before,
+    .heart:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart:before {
+      top: -15px;
+      left: 0;
+    }
+
+    .heart:after {
+      top: 0;
+      left: 15px;
+    }
+
+    @keyframes floatUpRotateScale {
+      0% {
+        transform: translateY(100vh) rotate(-45deg) scale(1);
+        opacity: 1;
+      }
+      50% {
+        scale: 1.2;
+      }
+      100% {
+        transform: translateY(-100px) rotate(315deg) scale(1);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>To My Everything 💖</header>
+  <main>
+    <p>My love,</p>
+    <p>No words will ever be enough, but I try anyway—because you deserve every syllable. Even from miles away, you’re the calm in my chaos, the smile behind my strength. You’ve healed cracks in me that weren’t your burden to bear, but you did—with grace, patience, and love.</p>
+    <p>You are everything I could ask for and more. I don’t just love you—I <em>feel</em> you in every breath, every heartbeat, every dream. Thank you for being my person, my peace, my everything.</p>
+
+    <button id="btnPoema">Show Secret Poem</button>
+
+    <div id="poema" style="display: none; margin-top: 20px;">
+      <p>In the hush of night, when stars softly gleam,</p>
+      <p>You're the face I see in every dream.</p>
+      <p>Your brown eyes, tender, light my skies,</p>
+      <p>Even through screens, your love never lies.</p>
+      <p>Your voice, a balm, that soothes my soul,</p>
+      <p>In your presence, darling, I feel whole.</p>
+      <p>You’re not just beauty, though that’s divine—</p>
+      <p>You're grace in chaos, the calm in mine.</p>
+      <p>Those cute soft cheeks, that knowing smile,</p>
+      <p>Make every mile worth every while.</p>
+      <p>Your black hair dances in my mind’s breeze,</p>
+      <p>Even in distance, you put me at ease.</p>
+      <p>You held my heart when it was sore,</p>
+      <p>Fixed the pieces, made it more.</p>
+      <p>You healed pain you never made,</p>
+      <p>Lit my path when all else decayed.</p>
+      <p>You carry love like it's second skin,</p>
+      <p>With you, I always, always win.</p>
+      <p>You're my wonder, sexy and sweet,</p>
+      <p>A heartbeat that makes mine complete.</p>
+      <p>Fair as the moon, fierce as flame,</p>
+      <p>Every thought whispers your name.</p>
+      <p>So know, my love, from near or far,</p>
+      <p>No space can dim how loved you are.</p>
+      <p>Forever grateful, I promise this:</p>
+      <p>One day, no distance—just one long kiss. 💖</p>
+    </div>
+
+    <div class="mensaje-final">
+      Thank you for existing, my love. Never stop being you. 💖
+    </div>
+
+    <a href="https://wa.me/50253010225?text=Hola%20mi%20amor%2C%20aqu%C3%AD%20te%20respondo%20a%20tu%20sorpresa.%20Te%20amo%20%F0%9F%92%96"
+       target="_blank"
+       class="respuesta-btn">
+       Click here to reply to me 💌
+    </a>
+  </main>
+
+  <footer>Made with ♥ by me, for you</footer>
+
+  <script>
+    const btn = document.getElementById('btnPoema');
+    const poema = document.getElementById('poema');
+
+    btn.addEventListener('click', () => {
+      if (poema.style.display === 'none') {
+        poema.style.display = 'block';
+        btn.textContent = 'Hide Poem';
+      } else {
+        poema.style.display = 'none';
+        btn.textContent = 'Show Secret Poem';
+      }
+    });
+
+    function crearCorazon() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.animationDuration = 4 + Math.random() * 4 + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => {
+        heart.remove();
+      }, 8000);
+    }
+
+    setInterval(crearCorazon, 500);
+  </script>
+</body>
+</html>
